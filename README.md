@@ -17,6 +17,8 @@ With amazee.io local stack, most of Mac and Windows users run Composer commands 
 
 So the safer way is to *always run `composer update` and `composer require` from the Docker container*.
 
+BTW, this is true for most of other dependency managers: `npm`, `yarn`, etc.
+
 ### Running `composer require` prior to `composer install` can lead to dependencies update
 
 If you just cloned a repository and want to add a new package to the project, *run `composer install` before `composer require`*. Otherwise Composer can update other project dependencies without your request.
