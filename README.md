@@ -6,6 +6,12 @@ The starter lives at http://d8-starter-composer.io.dev.dev1.compact.amazee.io/ (
 
 How to setup a new project from d8-starter-composer: http://confluence.amazeelabs.com/display/KNOWLEDGE/Create+new+Drupal+8+Composer+project
 
+## Important notes about Composer
+
+### Running `composer require` prior to `composer install` can lead to dependencies update
+
+If you just cloned a repository and want to add a new package to the project, *run `composer install` before `composer require`*. Otherwise Composer can update other project dependencies without your request.
+
 ## Recipes
 
 The most recent version of the following recipes can be found at https://github.com/AmazeeLabs/d8-starter-composer#readme
