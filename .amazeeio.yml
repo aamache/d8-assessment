@@ -4,7 +4,7 @@ deploy_tasks:
     before_deploy:
       - composer install
       - yarn install --pure-lockfile
-      - yarn run gulp -- compile
+      - yarn run gulp compile
     after_deploy:
       - cd web && drush -y updb --cache-clear=0
       - cd web && drush -y cr
@@ -12,7 +12,7 @@ deploy_tasks:
     before_deploy:
       - composer install -o --prefer-dist
       - yarn install --pure-lockfile --production
-      - yarn run gulp -- compile --env=prod
+      - yarn run gulp compile --env=prod
       - rm -rf node_modules
     after_deploy:
       - cd web && drush -y updb --cache-clear=0
