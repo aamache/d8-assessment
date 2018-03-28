@@ -6,7 +6,7 @@ deploy_tasks:
       - yarn install --pure-lockfile
       - yarn run gulp compile
     after_deploy:
-      - cd web && drush -y updb --cache-clear=0
+      - cd web && drush -y updb --entity-updates --cache-clear=0
       - cd web && drush -y cr
   production:
     before_deploy:
@@ -15,7 +15,7 @@ deploy_tasks:
       - yarn run gulp compile --env=prod
       - rm -rf node_modules
     after_deploy:
-      - cd web && drush -y updb --cache-clear=0
+      - cd web && drush -y updb --entity-updates --cache-clear=0
       - cd web && drush -y cr
 shared:
   production:
