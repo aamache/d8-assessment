@@ -23,6 +23,14 @@ BTW, this is true for most of other dependency managers: `npm`, `yarn`, etc.
 
 If you just cloned a repository and want to add a new package to the project, *run `composer install` before `composer require`*. Otherwise Composer can update other project dependencies without your request.
 
+### Preventing the “lock file is not up to date” warning
+
+When running `composer install` you may occasionally see `Warning: The lock file is not up to date with the latest changes in composer.json. You may be getting outdated dependencies. Run update to update them.` Do NOT try to follow the warning's intructions and run “composer update”; it will update all the project dependencies to the latest versions which is not what you want.
+
+This warning will occur after fixing a merge conflict in the `composer.lock` file and is easy to fix.
+
+When you see a merge conflict in `composer.lock` file, one of the conflicting lines will be the `"content-hash"` line. It doesn't matter which content-hash line you pick since your merged file will need a new content-hash. After you have fixed all the merge conflicts, you can update the content-hash in `composer.lock` by running `composer update --lock`.
+
 ## Recipes
 
 The most recent version of the following recipes can be found at https://github.com/AmazeeLabs/d8-starter-composer#readme
