@@ -127,7 +127,7 @@ Use `composer require drupal/<MODULE_NAME>:dev-amazee#<COMMIT_HASH>` to add the 
 ```
     "extra": {
         "installer-paths": {
-            "web/modules/custom/<MODULE_NAME>": ["drupal/<MODULE_NAME>"],
+            "web/modules/some_other_folder/<MODULE_NAME>": ["drupal/<MODULE_NAME>"],
             ...
         }
     }
