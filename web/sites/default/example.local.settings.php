@@ -7,12 +7,15 @@
  * If you would like to use this file, copy it to the name 'settings.local.php' (this file will be exluded from Git)
  */
 
-// Disable render caches, necessary for twig files to be reloaded on every page view
+/**
+ * Disable render caches, necessary for twig files to be reloaded on every page view
+ */
 $settings['cache']['bins']['render'] = 'cache.backend.null';
 $settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
 
 $config['system.performance']['css']['preprocess'] = FALSE;
 $config['system.performance']['js']['preprocess'] = FALSE;
+
 /**
  * Allow test modules and themes to be installed.
  *
@@ -21,6 +24,7 @@ $config['system.performance']['js']['preprocess'] = FALSE;
  * purposes.
  */
 $settings['extension_discovery_scan_tests'] = TRUE;
+
 /**
  * Enable access to rebuild.php.
  *
@@ -30,6 +34,7 @@ $settings['extension_discovery_scan_tests'] = TRUE;
  * using these parameters in a request to rebuild.php.
  */
 $settings['rebuild_access'] = TRUE;
+
 /**
  * Skip file system permissions hardening.
  *
