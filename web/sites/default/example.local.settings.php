@@ -10,3 +10,12 @@
 // Disable render caches, necessary for twig files to be reloaded on every page view
 $settings['cache']['bins']['render'] = 'cache.backend.null';
 $settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
+
+$config['system.performance']['css']['preprocess'] = FALSE;
+$config['system.performance']['js']['preprocess'] = FALSE;
+
+$settings['extension_discovery_scan_tests'] = TRUE;
+
+$settings['rebuild_access'] = TRUE;
+
+$settings['skip_permissions_hardening'] = TRUE;
