@@ -43,6 +43,10 @@
         "drupal/redirect": "~1.0",
         "drupal/token": "~1.0",
         "drupal/varnish": "dev-amazee",
+        "drupal/webpack": "^1.0@alpha",
+        "drupal/webpack_babel": "^1.0@alpha",
+        "drupal/webpack_react": "^1.0@alpha",
+        "drupal/webpack_vuejs": "^1.0@alpha",
         "drush/drush": "~8.1.15"
     },
     "conflict": {

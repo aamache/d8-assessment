@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "64f774fec9713d4be90ce54b08abd88f",
+    "content-hash": "ce1b1c8b335246d6401121869eab4e66",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2813,6 +2813,245 @@
             },
             "type": "drupal-module",
             "time": "2017-06-24T13:44:45+00:00"
+        },
+        {
+            "name": "drupal/webpack",
+            "version": "1.0.0-alpha4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/webpack",
+                "reference": "8.x-1.0-alpha4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webpack-8.x-1.0-alpha4.zip",
+                "reference": "8.x-1.0-alpha4",
+                "shasum": "cc3165e23d696ecebc1378fb07debd548c7cf57a"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "ext-json": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha4",
+                    "datestamp": "1534718880",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Drupal\\webpack\\": "src/"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Błażej Owczarczyk",
+                    "homepage": "https://www.drupal.org/user/353861",
+                    "email": "blazeyy@gmail.com"
+                }
+            ],
+            "description": "Provides webpack for Drupal.",
+            "homepage": "https://www.drupal.org/project/webpack",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/webpack",
+                "issues": "https://www.drupal.org/project/issues/webpack"
+            }
+        },
+        {
+            "name": "drupal/webpack_babel",
+            "version": "1.0.0-alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/webpack_babel",
+                "reference": "8.x-1.0-alpha3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webpack_babel-8.x-1.0-alpha3.zip",
+                "reference": "8.x-1.0-alpha3",
+                "shasum": "e28e77e944eccca19733a5b7078928867b5093da"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/webpack": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha3",
+                    "datestamp": "1534718880",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Drupal\\webpack_babel\\": "src/"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Błażej Owczarczyk",
+                    "homepage": "https://www.drupal.org/user/353861",
+                    "email": "blazeyy@gmail.com"
+                }
+            ],
+            "description": "Provides Babel configuration for the webpack module.",
+            "homepage": "https://www.drupal.org/project/webpack_babel",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/webpack_babel",
+                "issues": "https://www.drupal.org/project/issues/webpack_babel"
+            }
+        },
+        {
+            "name": "drupal/webpack_react",
+            "version": "1.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/webpack_react",
+                "reference": "8.x-1.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webpack_react-8.x-1.0-alpha1.zip",
+                "reference": "8.x-1.0-alpha1",
+                "shasum": "bc7c4c475254fd2cfa37dd89cc73e88a67ebb1cf"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/webpack": "*",
+                "drupal/webpack_babel": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha1",
+                    "datestamp": "1534752180",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Drupal\\webpack_react\\": "src/"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Błażej Owczarczyk",
+                    "homepage": "https://www.drupal.org/user/353861",
+                    "email": "blazeyy@gmail.com"
+                }
+            ],
+            "description": "Provides React configuration for the webpack module.",
+            "homepage": "https://www.drupal.org/project/webpack_react",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/webpack_react",
+                "issues": "https://www.drupal.org/project/issues/webpack_react"
+            }
+        },
+        {
+            "name": "drupal/webpack_vuejs",
+            "version": "1.0.0-alpha2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/webpack_vuejs",
+                "reference": "8.x-1.0-alpha2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webpack_vuejs-8.x-1.0-alpha2.zip",
+                "reference": "8.x-1.0-alpha2",
+                "shasum": "ede7f86f28d40a8bf83332148d7f915af15857ba"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/webpack": "*",
+                "drupal/webpack_babel": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha2",
+                    "datestamp": "1534719480",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Drupal\\webpack_vuejs\\": "src/"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Błażej Owczarczyk",
+                    "homepage": "https://www.drupal.org/user/353861",
+                    "email": "blazeyy@gmail.com"
+                }
+            ],
+            "description": "Provides Vue.js configuration for the webpack module.",
+            "homepage": "https://www.drupal.org/project/webpack_vuejs",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/webpack_vuejs",
+                "issues": "https://www.drupal.org/project/issues/webpack_vuejs"
+            }
         },
         {
             "name": "drush/drush",
@@ -5877,7 +6116,11 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/graphql": 10,
-        "drupal/varnish": 20
+        "drupal/varnish": 20,
+        "drupal/webpack": 15,
+        "drupal/webpack_babel": 15,
+        "drupal/webpack_react": 15,
+        "drupal/webpack_vuejs": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,
