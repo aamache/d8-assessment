@@ -47,7 +47,7 @@
         "drupal/webpack_babel": "^1.0@alpha",
         "drupal/webpack_react": "^1.0@alpha",
         "drupal/webpack_vuejs": "^1.0@alpha",
-        "drush/drush": "~8.1.15"
+        "drush/drush": "~9.0.0"
     },
     "conflict": {
         "drupal/drupal": "*"
