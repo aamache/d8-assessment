@@ -21,3 +21,21 @@
 @import "3_pages/**/*";
 @import "4_components/**/*";
 
+.header {
+  background-color: #128128; }
+}
+.course-title {
+  font-size: 1.2em;
+font-style: underline; }
+
+.course-intro {
+  padding:1em;
+}
+.course-image {
+  padding:1em;
+}
+
+.course-fee {
+  color: #7e0b0b
+  display:block;
+}

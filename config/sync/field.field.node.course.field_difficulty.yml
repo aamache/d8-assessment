@@ -1,0 +1,21 @@
+uuid: b9415392-94b6-4c70-b13b-85a6f3361c3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_difficulty
+    - node.type.course
+  module:
+    - options
+id: node.course.field_difficulty
+field_name: field_difficulty
+entity_type: node
+bundle: course
+label: Difficulty
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

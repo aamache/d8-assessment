@@ -1,0 +1,12 @@
+uuid: a5e5b3d4-9570-4f6d-8584-6d1fa942628b
+langcode: en
+status: true
+dependencies: {  }
+id: courses_view
+label: 'Courses View'
+description: ''
+use_admin_theme: false
+path: /courses
+access_logic: and
+access_conditions: {  }
+parameters: {  }

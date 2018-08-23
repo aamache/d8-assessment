@@ -1,0 +1,16 @@
+uuid: 7328adc5-32cb-4f27-b17d-49fd6e63b178
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.course
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.course
+target_entity_type_id: node
+target_bundle: course
+default_langcode: site_default
+language_alterable: true

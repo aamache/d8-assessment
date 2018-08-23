@@ -1,6 +1,6 @@
 varnish_flush_cron: null
 varnish_version: '3'
-varnish_control_terminal: '127.0.0.1:6082'
+varnish_control_terminal: 'd8-starter-composer.io.docker.amazee.io:6082'
 varnish_control_key: ''
 varnish_socket_timeout: '100'
 varnish_cache_clear: '1'

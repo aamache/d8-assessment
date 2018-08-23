@@ -1,0 +1,29 @@
+uuid: 6a949f00-095b-48f9-9ec2-9e91f285b7f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_topic
+    - node.type.course
+    - taxonomy.vocabulary.topic
+id: node.course.field_topic
+field_name: field_topic
+entity_type: node
+bundle: course
+label: Topic
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      topic: topic
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

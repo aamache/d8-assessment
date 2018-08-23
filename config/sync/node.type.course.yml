@@ -1,0 +1,18 @@
+uuid: 8dc5630b-9220-40c2-99d5-af40209c79f4
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Course
+type: course
+description: 'Create new Course'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

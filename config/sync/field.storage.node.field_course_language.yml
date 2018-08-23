@@ -1,0 +1,30 @@
+uuid: f7f69433-5555-4c9b-9d30-718b15e6766e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_course_language
+field_name: field_course_language
+entity_type: node
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 1
+      label: English
+    -
+      value: 2
+      label: German
+    -
+      value: 3
+      label: French
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

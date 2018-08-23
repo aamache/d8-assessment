@@ -1,0 +1,23 @@
+uuid: ccb1d9fd-2034-45b3-8bda-040b8b2a9228
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_course_fees
+    - node.type.course
+id: node.course.field_course_fees
+field_name: field_course_fees
+entity_type: node
+bundle: course
+label: 'Course Fees'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: $USD
+  suffix: ''
+field_type: decimal

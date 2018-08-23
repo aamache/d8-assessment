@@ -1,0 +1,22 @@
+uuid: ee2646d5-ec2e-4f65-a76a-71e2da68b2c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_course_intro
+    - node.type.course
+  module:
+    - text
+id: node.course.field_course_intro
+field_name: field_course_intro
+entity_type: node
+bundle: course
+label: 'Course Intro'
+description: 'Please insert here the introduction of the course'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

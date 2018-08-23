@@ -1,0 +1,21 @@
+uuid: 2467d1da-fee4-43c2-9203-42f772b4a704
+langcode: en
+status: true
+dependencies:
+  config:
+    - page_manager.page.courses_view
+id: courses_view-block_display-0
+label: 'Our Courses'
+variant: block_display
+variant_settings:
+  blocks: {  }
+  id: block_display
+  uuid: c98bf03e-47d4-41d7-9a50-5393fd2cc3d1
+  label: null
+  weight: 0
+  page_title: Courses
+page: courses_view
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }
