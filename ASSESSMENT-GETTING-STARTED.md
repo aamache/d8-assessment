@@ -11,3 +11,7 @@
 9. Create a pull-request for review.
 10. Export the database by running this command inside the Docker container: `drush sql-dump --result-file --gzip`, then move the generated dump from the `/var/www/drupal/drush-backups/drupal` folder to `~/public_html/web` so that you can easily access the file outside of your Docker instance, in order to commit it or attach and send it via mail if required.
 
+## Vue and React
+
+There are two custom modules for Vue and React, in order to build these you need Drush v9 (check with `drush --version` inside the container). Then run `drush webpack:build` to build the libraries.
+
